@@ -1,10 +1,13 @@
 import React from 'react'
+import { useAppSelector } from '../hooks/redux'
 
 function Location() {
+  const { data } = useAppSelector((state) => state.weather)
+
   return (
     <div className="top">
       <div className="location">
-        <p>Казань</p>
+        <p>{data.name}</p>
       </div>
       <div className="temp">
         <h1>-1°C</h1>
