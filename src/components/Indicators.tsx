@@ -4,13 +4,16 @@ function Indicators() {
   return (
     <div className="bottom">
       <div className="feels">
-        <p>-4°C</p>
+        <p className="bold">-4°C</p>
+        <p>Ощущается как</p>
       </div>
       <div className="humidity">
-        <p>87%</p>
+        <p className="bold">87%</p>
+        <p>Влажность</p>
       </div>
       <div className="wind">
-        <p>3 м/с</p>
+        <p className="bold">3 м/с</p>
+        <p>Скорость ветра</p>
       </div>
     </div>
   )
