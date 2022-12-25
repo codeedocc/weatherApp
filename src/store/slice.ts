@@ -23,5 +23,5 @@ export const weatherSlice = createSlice({
   },
 })
 
-export const quizActions = weatherSlice.actions
-export const quizReducer = weatherSlice.reducer
+export const weatherActions = weatherSlice.actions
+export const weatherReducer = weatherSlice.reducer
