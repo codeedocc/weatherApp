@@ -10,10 +10,10 @@ function Location() {
         <p>{data.name}</p>
       </div>
       <div className="temp">
-        {data.main ? <h1>{data.main.temp}°</h1> : null}
+        {data.main ? <h1>{data.main.temp}°C</h1> : null}
       </div>
       <div className="description">
-        <p>Облачно</p>
+        {data.weather ? <p>{data.weather[0].description}</p> : null}
       </div>
     </div>
   )
