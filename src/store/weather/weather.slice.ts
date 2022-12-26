@@ -1,7 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-const initialState = {
-  data: {},
+interface IInitialState {
+  location: string
+}
+
+const initialState: IInitialState = {
   location: '',
 }
 
@@ -9,9 +12,6 @@ export const weatherSlice = createSlice({
   name: 'weather',
   initialState,
   reducers: {
-    setData: (state, action) => {
-      state.data = action.payload
-    },
     setLocation: (state, action) => {
       state.location = action.payload
     },

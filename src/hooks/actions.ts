@@ -1,4 +1,4 @@
-import { weatherActions } from '../store/slice'
+import { weatherActions } from '../store/weather/weather.slice'
 import { bindActionCreators } from '@reduxjs/toolkit'
 import { useDispatch } from 'react-redux'
 
