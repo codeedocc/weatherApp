@@ -4,7 +4,7 @@ import { useActions } from '../hooks/actions'
 import axios from 'axios'
 
 function Input() {
-  const { location, data } = useAppSelector((state) => state.weather)
+  const { location } = useAppSelector((state) => state.weather)
   const { setLocation, setData } = useActions()
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=2b573449087270184ae0fb5758061b01&units=metric&lang=ru`
@@ -24,7 +24,7 @@ function Input() {
       <input
         value={location}
         onChange={(event) => setLocation(event.target.value)}
-        placeholder="Введите название города..."
+        placeholder="Напиши локацию..."
         onKeyPress={searchLocation}
         type={'text'}
       ></input>
