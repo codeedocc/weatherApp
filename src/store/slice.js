@@ -1,18 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-interface IData {
-  name: string
-}
-
-interface IInitialState {
-  data: IData
-  location: string
-}
-
-const initialState: IInitialState = {
-  data: {
-    name: '',
-  },
+const initialState = {
+  data: {},
   location: '',
 }
 
