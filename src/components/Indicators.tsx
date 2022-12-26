@@ -15,7 +15,7 @@ function Indicators() {
   return (
     <>
       {data?.name !== undefined && (
-        <div className="bottom">
+        <div className={isError ? '' : 'bottom'}>
           <div className="feels">
             {isError ? null : data?.main ? (
               <p className="bold">{Math.floor(data.main.feels_like)}°C</p>
