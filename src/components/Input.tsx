@@ -11,7 +11,7 @@ function Input() {
       <input
         value={location}
         onChange={(event) => setLocation(event.target.value)}
-        placeholder="Напиши локацию..."
+        placeholder="Введите город..."
         type={'text'}
       ></input>
     </div>

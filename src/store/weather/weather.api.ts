@@ -13,7 +13,7 @@ export const weatherApi = createApi({
         url: `weather`,
         params: {
           q: search,
-          appid: '2b573449087270184ae0fb5758061b01',
+          appid: process.env.REACT_APP_SECRET_KEY,
           units: 'metric',
           lang: 'ru',
         },
