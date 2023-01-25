@@ -5,7 +5,7 @@ import Input from './components/Input'
 
 function App() {
   return (
-    <div className="container">
+    <div className="wrapped">
       <Input />
       <Location />
       <Indicators />
