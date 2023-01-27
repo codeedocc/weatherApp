@@ -14,7 +14,7 @@ body {
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 h1 {
@@ -52,7 +52,7 @@ h1 {
 .wrapped .search {
   text-align: center;
   padding-top: 4rem;
-  padding-bottom: 5rem;
+  padding-bottom: 7rem;
 }
 
 .wrapped input {
@@ -81,7 +81,27 @@ h1 {
   right: 0;
 }
 
+.location {
+  font-weight: bold;
+}
+
+.description {
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
+  .warm {
+    background: url('./assets/warmLittle.jpg') no-repeat center center/cover;
+  }
+
+  .cold {
+    background: url('./assets/coldLittle.jpg') no-repeat center center/cover;
+  }
+
+  .default {
+    background: url('./assets/def.jpg') no-repeat center center/cover;
+  }
+
   .bottom {
     height: 80px;
     align-items: center;
