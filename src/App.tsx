@@ -18,8 +18,8 @@ function App() {
   return (
     <div
       className={`wrapped ${
-        data?.name !== undefined && data?.main.feels_like > 0 && 'warm'
-      } ${data?.name !== undefined && data?.main.feels_like < 0 && 'cold'} ${
+        data?.name !== undefined && data.main.temp > 0 && 'warm'
+      } ${data?.name !== undefined && data.main.temp < 0 && 'cold'} ${
         data?.name === undefined && 'default'
       }`}
     >

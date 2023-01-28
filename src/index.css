@@ -29,16 +29,20 @@ h1 {
   font-weight: 700;
 }
 
+.search > input {
+  margin-top: 30px;
+}
+
 .cold {
-  background: url('./assets/cold.jpg') no-repeat center center/cover;
+  background: linear-gradient(45deg, #6a85b6, #bac8e0);
 }
 
 .warm {
-  background: url('./assets/warm.jpg') no-repeat center center/cover;
+  background: linear-gradient(45deg, #137a7a, #80d0c7);
 }
 
 .default {
-  background: url('./assets/default.jpg') no-repeat center center/cover;
+  background: linear-gradient(45deg, #00c6fb, #3765af);
 }
 
 .wrapped {
@@ -67,10 +71,10 @@ h1 {
 
 .wrapped .bottom {
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
   margin-left: 30px;
   margin-right: 30px;
-  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 12px;
   margin-top: 160px;
   align-items: center;
@@ -94,12 +98,12 @@ h1 {
     background: url('./assets/warmLittle.jpg') no-repeat center center/cover;
   }
 
-  .cold {
-    background: url('./assets/coldLittle.jpg') no-repeat center center/cover;
+  .wrapped .bottom {
+    background-color: rgba(37, 71, 88, 0.7);
   }
 
-  .default {
-    background: url('./assets/def.jpg') no-repeat center center/cover;
+  .cold {
+    background: url('./assets/coldLittle.jpg') no-repeat center center/cover;
   }
 
   .bottom {
